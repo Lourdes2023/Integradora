@@ -36,16 +36,15 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: linear-gradient(
     var(--grad--gray),
     var(--grad--lightgray),
     var(--grad--gray)
   );
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 main {
   display: flex;
@@ -56,30 +55,30 @@ main {
 
 /*Estilos Header y logo*/
 .header__navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   background: #3ccbce;
+  border-bottom: 1px solid white;
   z-index: 1;
   background-color: var(--rgba--blur);
   backdrop-filter: blur(5px);
-  border-bottom: 2px solid var(--bord--ligtgwhite);
   transition: 1s ease-in-out;
 }
-
-.logo {
+.navbar__logo {
   width: 10%;
   height: 100%;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 .logo img {
   width: 100%;
 }
+
 /* Estilos navbar  */
 .navbar {
   display: flex;
@@ -87,6 +86,7 @@ main {
   justify-content: center;
   width: 100%;
   padding: 20px 100px 0px 0px;
+  margin-right: 20%;
 }
 
 .navbar__list {
@@ -94,12 +94,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 100px 0px 0px;
   gap: 40px;
 }
 
 .navbar__list a {
   color: var(--textNav-blue);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
   display: block;
   height: 100%;
@@ -135,22 +136,35 @@ main {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
   transform: translateX(-50px);
-  transition: 1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
+/* .menu__toggle {
+  display: none;
+} */
+
+/* oculta menu hamburguesa */
+#menu__toggle,
+.menu__label,
+.menu__btn__icon {
+  display: none;
+}
+
 /* estilos para la secciòn de portada */
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 70px;
+  padding: 50px;
+  max-width: 1800px;
+  width: 100%;
+  border: 1px solid rgb(238, 240, 244);
   animation: backgrountshow 20s infinite;
 }
 
 .hero__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-top: 15vh;
+  margin-left: 10%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(9px);
   box-shadow: rgba(102, 108, 113, 0.498) 0px 0px 5rem inset,
@@ -200,7 +214,7 @@ main {
   justify-content: center;
   text-align: center;
   padding: 30px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
   color: var(--grad--blueBlack);
   gap: 20px;
@@ -560,7 +574,8 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1800px;
+
   margin: 0 auto;
 }
 
@@ -584,6 +599,9 @@ ul {
 ul li {
   margin-bottom: 10px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul li i {

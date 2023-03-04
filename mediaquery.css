@@ -1,0 +1,235 @@
+/* Tablet */
+
+@media only screen and (max-width: 1170px) {
+  .header__navbar :hover {
+    animation: none;
+  }
+  .header__navbar .logo img {
+    width: 150px;
+    height: 100%;
+    margin-left: 100%;
+  }
+
+  .menu__label {
+    display: flex;
+  }
+
+  .menu__btn__icon {
+    display: flex;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+  }
+  .navbar__list {
+    display: none;
+  }
+
+  .menu__toggle:checked ~ .navbar__list {
+    display: block;
+  }
+  .navbar__list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      var(--grad--gray),
+      var(--grad--lightgray),
+      var(--grad--gray)
+    );
+    padding: 20px 0;
+    z-index: 1;
+    border-top: 2px solid var(--bord--ligtgwhite);
+    transition: all 0.5s ease-in-out;
+  }
+  .dropdown .dropdown__menu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    top: 41%;
+    left: 36%;
+    background-color: var(--back--lightblue);
+    visibility: hidden;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero__container {
+    justify-content: center;
+    margin: 0%;
+    margin-top: 10vh;
+    width: 50%;
+  }
+  .hero__text p {
+    font-size: 1.5rem;
+  }
+
+  .hero__text h1 {
+    font-size: 2.5rem;
+    padding: 30px;
+  }
+  .about__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .info__video {
+    width: 80%;
+  }
+  .service__container {
+    width: 100%;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .back-to-top {
+    right: 90px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    right: 100%;
+  }
+  .building__1,
+  .building__2,
+  .building__3,
+  .building__4,
+  .building__5 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .building__6,
+  .building__7 {
+    display: none;
+  }
+  .building__8 {
+    height: 100px;
+  }
+  .building__10 {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__container {
+    margin-right: 90px;
+  }
+  .hero__text h1 {
+    text-align: center;
+  }
+  .hero__text p {
+    font-size: 24px;
+  }
+  .skyline {
+    display: none;
+  }
+  .box span {
+    font-size: 24px;
+  }
+  .box p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero__text h1 {
+    font-size: 32px;
+  }
+  .hero__text p {
+    font-size: 24px;
+  }
+  .hero__button a {
+    font-size: 16px;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__form h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .contact__info h3 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .menu__btn__icon {
+    width: 40px;
+  }
+  .hero__container {
+    width: 40%;
+    margin-top: 15vh;
+  }
+  .hero__container h1 {
+    font-size: 36px;
+  }
+  .hero__container p {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .info__video {
+    display: none;
+  }
+  .contact__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact__info p {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .contact__info ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .contact__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  .footer__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .back-to-top {
+    right: 150px;
+  }
+}
