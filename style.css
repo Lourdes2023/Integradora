@@ -151,10 +151,11 @@ main {
 
 /* estilos para la secciòn de portada */
 #hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
-  max-width: 1800px;
+
   width: 100%;
   border: 1px solid rgb(238, 240, 244);
   animation: backgrountshow 20s infinite;
@@ -162,9 +163,11 @@ main {
 
 .hero__container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
   flex-direction: column;
   margin-top: 15vh;
-  margin-left: 10%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(9px);
   box-shadow: rgba(102, 108, 113, 0.498) 0px 0px 5rem inset,
@@ -175,7 +178,7 @@ main {
   border-color: var(--bord--ligtgwhite);
   border-image: initial;
   border-radius: 16px;
-  transition: 5s ease;
+  transition: 0.5s ease;
 }
 .hero__container:hover {
   animation: fondo2 1s ease;
@@ -206,7 +209,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-radius: 10px;
-  animation: fondo 10s ease infinite;
+  animation: fondo 3s ease infinite;
 }
 
 .hero__text p {
@@ -315,6 +318,9 @@ main {
 /* Estilos Box de texto de informacion */
 .about__box {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border-radius: 15%;
 }
 .box {
@@ -422,6 +428,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  width: 90%;
   height: 100vh;
 }
 .service__container {
@@ -476,7 +484,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 20px;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  padding: 20px;
+  border-top: 1px solid#333;
 }
 
 .contact__info {
@@ -528,6 +540,7 @@ main {
 .contact__form form {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
@@ -538,7 +551,7 @@ main {
   border-bottom: 1px solid var(--bord--ligtgwhite);
   padding: 10px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 50%;
   font-size: 1.2rem;
 }
 
@@ -552,6 +565,7 @@ main {
   border: 1px solid var(--bord--ligtgwhite);
   background-color: var(--grad--blueskay);
   border-radius: 10px;
+  width: 150px;
   color: var(--bord--ligtgwhite);
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -565,6 +579,11 @@ main {
 
 /* Estilos para el footer */
 footer {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 90%;
   background-color: var(--back-grayblack);
   color: var(--bord--ligtgwhite);
   padding: 50px;
@@ -574,8 +593,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1800px;
-
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -600,7 +618,7 @@ ul li {
   margin-bottom: 10px;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -613,7 +631,9 @@ ul li a {
   color: var(--grad--blueskay);
   text-decoration: none;
 }
-
+.copyright {
+  color: #e6db79;
+}
 /* Estilo para el enlace "Volver al inicio" */
 
 .back-to-top {

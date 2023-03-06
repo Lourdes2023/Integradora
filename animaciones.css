@@ -15,10 +15,10 @@ html {
 }
 .navbar__list li :hover {
   color: #a1ed09;
-  animation: fondo1 0.5s ease-in-out;
+  animation: background-header 0.5s ease-in-out;
 }
 
-@keyframes fondo1 {
+@keyframes background-header {
   0% {
     background: linear-gradient(
       45deg,
@@ -121,7 +121,7 @@ html {
 }
 /* Animación de los edificios de portada de home */
 .building {
-  animation: flicker 5s infinite alternate;
+  animation: flicker 1s infinite alternate;
 }
 
 @keyframes flicker {
