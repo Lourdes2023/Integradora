@@ -5,6 +5,7 @@
   padding: 0;
   text-decoration: none;
   font-family: "Playfair Display", serif;
+  box-sizing: border-box;
 }
 :root {
   --grad--gray: #85827e;
@@ -36,10 +37,8 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
   background: linear-gradient(
     var(--grad--gray),
     var(--grad--lightgray),
@@ -138,9 +137,6 @@ main {
   transform: translateX(-50px);
   transition: 0.1s ease-in-out;
 }
-/* .menu__toggle {
-  display: none;
-} */
 
 /* oculta menu hamburguesa */
 #menu__toggle,
@@ -155,17 +151,16 @@ main {
   justify-content: center;
   align-items: center;
   padding: 50px;
-
   width: 100%;
   border: 1px solid rgb(238, 240, 244);
-  animation: backgrountshow 20s infinite;
+  animation: backgrountshow 5s infinite;
 }
 
 .hero__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
+  max-width: 100%;
   flex-direction: column;
   margin-top: 15vh;
   background-color: rgba(255, 255, 255, 0.1);
@@ -374,7 +369,6 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
 }
 .container {
   display: flex;
@@ -436,8 +430,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  width: 90%;
 }
 .services {
   display: flex;
@@ -485,8 +477,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  width: 90%;
   padding: 20px;
   border-top: 1px solid#333;
 }
@@ -582,8 +572,7 @@ footer {
   display: flex;
   justify-content: start;
   flex-direction: column;
-  max-width: 1200px;
-  width: 90%;
+
   background-color: var(--back-grayblack);
   color: var(--bord--ligtgwhite);
   padding: 50px;
@@ -593,7 +582,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+
   margin: 0 auto;
 }
 
