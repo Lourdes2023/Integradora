@@ -5,7 +5,7 @@ html {
   scroll-padding-top: 65px;
 }
 
-.header__navbar :hover {
+.navbar__header :hover {
   animation: fondo1 0.5s ease-in-out;
 }
 .navbar__list li :hover {

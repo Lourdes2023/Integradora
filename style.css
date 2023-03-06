@@ -53,7 +53,7 @@ main {
 }
 
 /*Estilos Header y logo*/
-.header__navbar {
+.navbar__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,16 +315,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   border-radius: 15%;
 }
 .box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 30%;
-  padding: 100px;
+  width: 490px;
+  height: 490px;
+  padding: 90px;
 }
 
 .about__text1 {
@@ -355,7 +355,6 @@ main {
   color: var(--text-bronzeBlack);
   font-size: 32px;
   text-align: center;
-  margin-bottom: 18px;
 }
 .box p {
   color: var(--text--graybrown);
@@ -430,6 +429,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
 }
 .services {
   display: flex;
@@ -454,7 +454,7 @@ main {
   display: block;
   text-align: center;
   position: relative;
-  height: 100px;
+  height: 162px;
   width: 100%;
   max-width: 250px;
   color: rgb(35, 101, 243);

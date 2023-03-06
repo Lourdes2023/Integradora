@@ -1,10 +1,10 @@
 /* Tablet */
 
 @media only screen and (max-width: 1170px) {
-  .header__navbar :hover {
+  .navbar__header :hover {
     animation: none;
   }
-  .header__navbar .logo img {
+  .navbar__header .logo img {
     width: 150px;
     height: 100%;
     margin-left: 100%;
@@ -163,12 +163,6 @@
   .back-to-top {
     width: 60px;
     right: 5px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .main {
-    width: 100%;
-    max-width: none;
   }
 }
 
