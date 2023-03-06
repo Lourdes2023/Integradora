@@ -160,7 +160,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 60%;
   flex-direction: column;
   margin-top: 15vh;
   background-color: rgba(255, 255, 255, 0.1);
@@ -593,7 +593,8 @@ footer {
 
 .footer__column h2 {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--bord--ligtgwhite);
 }
 
@@ -605,7 +606,7 @@ ul {
 
 ul li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   justify-content: start;
   align-items: center;

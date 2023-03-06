@@ -67,21 +67,25 @@
   .hero__container {
     justify-content: center;
     margin: 0%;
-    margin-top: 10vh;
-    width: 50%;
+    margin-top: 15vh;
+    width: 70%;
   }
   .hero__text p {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
   }
 
   .hero__text h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding: 30px;
+  }
+  .hero__button a {
+    font-size: 36px;
   }
   .about__box {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .container {
     width: 100%;
   }
@@ -123,7 +127,12 @@
   }
 
   .back-to-top {
-    right: 90px;
+    right: 50px;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -133,6 +142,7 @@
     position: relative;
     right: 100%;
   }
+
   .building__1,
   .building__2,
   .building__3,
@@ -140,8 +150,38 @@
   .building__5 {
     display: none;
   }
+  .box {
+    font-weight: 600;
+  }
+
+  .text__info {
+    width: 100%;
+  }
+  .intro {
+    width: 100%;
+  }
+
+  .intro h2 {
+    font-size: 35px;
+  }
+  .intro p {
+    font-size: 24px;
+  }
+  .contact__form input,
+  .contact__form textarea {
+    width: 100%;
+  }
 }
+
 @media only screen and (max-width: 768px) {
+  .hero__container {
+    width: 90%;
+  }
+
+  .text__info {
+    width: 100%;
+  }
+
   .building__6,
   .building__7 {
     display: none;
@@ -188,6 +228,10 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .navbar__logo {
+    width: 100px;
+    margin-left: 50%;
+  }
   .hero__text h1 {
     font-size: 32px;
   }
@@ -197,32 +241,48 @@
   .hero__button a {
     font-size: 16px;
   }
+  .about__containerInfo {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+  }
+  .about__containerInfo p {
+    width: 100%;
+    display: contents;
+  }
+  .container {
+    display: none;
+  }
+
   #contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    text-align: center;
   }
   .info__video {
-    width: 70%;
+    display: none;
   }
   .contact__info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
   }
   .contact__info p {
-    border: 1px solid;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
   }
   .contact__info ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+  }
+  .contact__form {
+    margin: 0%;
+    width: 100%;
   }
   .contact__form h3 {
     font-size: 24px;
@@ -230,6 +290,10 @@
   }
   .contact__info h3 {
     font-size: 24px;
+  }
+  .contact__form input,
+  .contact__form textarea {
+    width: 100%;
   }
 
   .back-to-top {
@@ -250,17 +314,15 @@
     width: 30px;
   }
   .hero__container {
-    width: 40%;
+    width: 100%;
     margin-top: 15vh;
   }
-  .hero__container h1 {
-    font-size: 24px;
-  }
+
   .hero__container p {
-    font-size: 16px;
-    padding: 0;
+    font-size: 20px;
     margin-bottom: 20px;
   }
+
   .info__video {
     width: 70%;
   }
@@ -273,7 +335,7 @@
     width: 100%;
   }
   .back-to-top {
-    left: 60%;
+    right: 10px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -284,7 +346,6 @@
     display: none;
   }
   .back-to-top {
-    left: 60%;
     bottom: 90px;
   }
 }
