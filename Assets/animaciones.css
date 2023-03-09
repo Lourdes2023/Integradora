@@ -89,27 +89,19 @@ body {
 
 /* Animación para imagenes efecto slaider */
 @keyframes slide {
-  0%,
-  10%,
-  20% {
+  0% {
     right: 0%;
   }
 
-  25%,
-  35%,
-  45% {
-    right: 200%;
+  25% {
+    right: 50%;
   }
 
-  50%,
-  60%,
-  70% {
-    right: 0%;
+  50% {
+    right: 150%;
   }
-  75%,
-  80%,
-  90% {
-    range: 200%;
+  75% {
+    range: 250%;
   }
   100% {
     right: 0%;

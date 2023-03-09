@@ -572,7 +572,6 @@ footer {
   display: flex;
   justify-content: start;
   flex-direction: column;
-
   background-color: var(--back-grayblack);
   color: var(--bord--ligtgwhite);
   padding: 50px;
@@ -582,7 +581,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   margin: 0 auto;
 }
 
@@ -593,7 +591,7 @@ footer {
 
 .footer__column h2 {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--bord--ligtgwhite);
 }

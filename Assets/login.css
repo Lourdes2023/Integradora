@@ -5,6 +5,7 @@
   padding: 0;
   text-decoration: none;
   font-family: "Playfair Display", serif;
+  box-sizing: border-box;
 }
 :root {
   --grad--gray: #85827e;
@@ -36,6 +37,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background: linear-gradient(
     var(--grad--gray),
     var(--grad--lightgray),
@@ -59,10 +61,8 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  max-width: 1200px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #3ccbce;
   z-index: 1;
   background-color: var(--rgba--blur);
@@ -138,11 +138,20 @@ main {
   transition: 1s ease-in-out;
 }
 
+#menu__toggle,
+.menu__label,
+.menu__btn__icon {
+  display: none;
+}
+
 /* Estilos sección información "Servicios" */
 
 /*Estilos smart home */
 #service__about {
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 15vh;
   max-width: 1200px;
@@ -152,8 +161,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  row-gap: 10px;
+  width: 90%;
 }
 
 .s__container__info {
@@ -162,6 +170,7 @@ main {
   justify-content: space-between;
   grid-template-columns: 20px;
   margin: 10px;
+  gap: 50px;
   padding: 0;
   overflow: hidden;
 }
@@ -179,7 +188,7 @@ main {
   flex-direction: column;
   padding: 35px;
   width: 50%;
-  gap: 20px;
+  gap: 50px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -211,7 +220,10 @@ main {
   font-size: 24px;
   padding: 20px;
 }
-
+.videobox {
+  display: flex;
+  flex-direction: column;
+}
 /* Estilos Gradientes para titulo servicios  */
 .wave {
   display: inline-block;
@@ -268,13 +280,13 @@ main {
   width: 100%;
 }
 .s__slaider img {
-  width: 500px;
+  width: 350px;
 }
 .s__slaideshow {
   display: flex;
   width: 100%;
   position: relative;
-  animation: slide 20s ease-in-out infinite;
+  animation: slide 15s ease-in-out infinite;
 }
 /* Estilos para los videos */
 .s__video {
@@ -341,6 +353,9 @@ main {
   margin-bottom: 20px;
   color: var(--text--bronze);
 }
+.contact__info p {
+  font-size: 32px;
+}
 
 .contact__form form {
   display: flex;
@@ -382,6 +397,9 @@ main {
 
 /* Estilos para el footer */
 footer {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
   background-color: var(--back-grayblack);
   color: var(--bord--ligtgwhite);
   padding: 50px;
@@ -391,7 +409,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -402,7 +419,7 @@ footer {
 
 .footer__column h2 {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--bord--ligtgwhite);
 }
 
@@ -413,8 +430,10 @@ ul {
 }
 
 ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   margin-bottom: 10px;
-  font-size: 14px;
 }
 
 ul li i {
@@ -425,6 +444,10 @@ ul li i {
 ul li a {
   color: var(--grad--blueskay);
   text-decoration: none;
+  font-size: 24px;
+}
+.copyright p {
+  font-size: 24px;
 }
 
 /* Estilo para el enlace "Volver al inicio" */

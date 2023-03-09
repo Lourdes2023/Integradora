@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tecnologia-BIM</title>
+    <title>Smart-building</title>
     <link rel="stylesheet" href="../login.css" />
     <link rel="stylesheet" href="../animaciones.css" />
+    <link rel="stylesheet" href="../mediaquery.css" />
   </head>
   <body>
     <!-- Estructura header -->
@@ -15,6 +16,16 @@
         <a href="/index.html" class="logo">
           <img src="../img/LogoHelca.png" alt="logo" />
         </a>
+
+        <input type="checkbox" id="menu__toggle" class="menu__toggle" />
+        <label for="menu__toggle" class="menu__label">
+          <img
+            class="menu__btn__icon"
+            src="../img/navigation-drawer-1.png"
+            alt="menu"
+          />
+        </label>
+
         <ul class="navbar__list">
           <li>
             <a href="/index.html" class="nav__link">Home</a>
@@ -47,7 +58,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="../Noticias/index.html">Noticias</a></li>
+
           <li><a href="#contact" class="nav__link">Contacto</a></li>
         </ul>
       </nav>
@@ -81,10 +92,8 @@
             <div class="s__slaider">
               <ul class="s__slaideshow">
                 <li><img src="../img/5.png" alt="imagen1" /></li>
-                <li>
-                  <img src="../img/9.png" alt="imagen2" />
-                </li>
-                <li><img src="../img/2.png" alt="a" /></li>
+                <li><img src="../img/9.png" alt="imagen2" /></li>
+                <li><img src="../img/2.png" alt="imagen3" /></li>
               </ul>
             </div>
           </div>
@@ -135,14 +144,17 @@
           <div class="s__container__info">
             <div class="s__text">
               <h3 class="wave">
-                <span class="wave2">Nuestros Servicios BIM</span>
+                <span class="wave2">Nuestros Servicios</span>
               </h3>
               <p>
-                En nuestra empresa, ofrecemos servicios BIM completos, desde la
-                planificación y diseño hasta la construcción y mantenimiento.
-                Utilizamos herramientas BIM avanzadas y personalizadas para cada
-                proyecto, lo que nos permite ofrecer soluciones precisas y
-                eficientes para nuestros clientes.
+                Entre las características más comunes de los edificios
+                inteligentes se encuentran los sistemas de iluminación y
+                climatización automatizados, la monitorización del consumo
+                energético y la gestión inteligente de los residuos. Además,
+                estos edificios pueden estar equipados con sensores y
+                dispositivos conectados a Internet de las Cosas (IoT) para
+                recopilar datos en tiempo real sobre el comportamiento de los
+                ocupantes y el rendimiento del edificio.
               </p>
             </div>
             <div class="s__slaider">
@@ -161,14 +173,10 @@
                 <span class="wave2">Contacte con Nosotros</span>
               </h3>
               <p>
-                En definitiva, nuestros servicios de construcción sustentable
-                pueden ayudar a nuestros clientes a reducir los costos de
-                energía, contribuir al desarrollo sostenible y mejorar el
-                confort y la salud de los ocupantes de sus edificios. Si desea
-                obtener más información sobre nuestros servicios de construcción
-                sustentable, no dude en ponerse en contacto con nosotros.
-                Estaremos encantados de ayudarle a llevar a cabo su proyecto de
-                construcción de manera sustentable.
+                En definitiva, nuestros servicios de construcción de edificios
+                inteligentes puede ser una excelente opción para aquellos que
+                buscan reducir sus costos de energía y mejorar la eficiencia de
+                sus instalaciones.
               </p>
             </div>
           </div>
@@ -183,21 +191,21 @@
               </p>
               <ul>
                 <li>
-                  <i class="fas fa-map-marker-alt"></i> Dirección: 123 Av. F. de
-                  la Cruz, Ituzaingo, Argentina.
+                  <i class="fas fa-map-marker-alt"></i> Dirección: 1230 Av. F.
+                  de la Cruz, Ituzaingo, Argentina.
                 </li>
                 <li>
-                  <i class="fas fa-phone-alt"></i> Teléfono: (123) 456-7890
+                  <i class="fas fa-phone-alt"></i> Teléfono: (11) 4560-7890
                 </li>
                 <li>
                   <i class="fas fa-envelope"></i> Correo Electrónico:
-                  info@Helca-info.com
+                  Helcainfo@Gmail.com
                 </li>
               </ul>
             </div>
             <!-- Formulario de contacto -->
             <div class="contact__form">
-              <h3>Formulario de Contacto</h3>
+              <h3>¡Contáctanos!</h3>
               <form action="" method="post">
                 <input
                   type="text"
@@ -236,13 +244,13 @@
           <h2>Contáctanos</h2>
           <ul>
             <li>
-              <i class="fas fa-map-marker-alt"></i> Dirección: 123 Calle
-              Principal, Ciudad, Estado
+              <i class="fas fa-map-marker-alt"></i> Dirección: 1230 F. de la
+              cruz, Ituzaingo, Argentina Calle
             </li>
-            <li><i class="fas fa-phone-alt"></i> Teléfono: (123) 456-7890</li>
+            <li><i class="fas fa-phone-alt"></i> Teléfono: (11) 4560-7890</li>
             <li>
               <i class="fas fa-envelope"></i> Correo Electrónico:
-              info@tunombre.com
+              Helcainfo@Gmail.com
             </li>
           </ul>
         </div>
@@ -272,10 +280,11 @@
           </ul>
         </div>
       </div>
+      <a href="#top" class="back-to-top">Volver al Inicio</a>
+
       <div class="copyright">
         <p>© 2023 LourdesHelman. Todos los derechos reservados.</p>
       </div>
-      <a href="#top" class="back-to-top">Volver al Inicio</a>
     </footer>
   </body>
 </html>

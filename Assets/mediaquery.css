@@ -1,0 +1,249 @@
+@media only screen and (max-width: 1170px) {
+  .navbar__header :hover {
+    animation: none;
+  }
+  .navbar__header .logo img {
+    width: 150px;
+    height: 100%;
+    margin-left: 100%;
+  }
+
+  .menu__label {
+    display: flex;
+  }
+
+  .menu__btn__icon {
+    display: flex;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+  }
+  .navbar__list {
+    display: none;
+  }
+
+  .menu__toggle:checked ~ .navbar__list {
+    display: block;
+  }
+  .navbar__list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      var(--grad--gray),
+      var(--grad--lightgray),
+      var(--grad--gray)
+    );
+    padding: 20px 0;
+    z-index: 1;
+    border-top: 2px solid var(--bord--ligtgwhite);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .dropdown .dropdown__menu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    top: 41%;
+    left: 36%;
+    background-color: var(--back--lightblue);
+    visibility: hidden;
+  }
+
+  #service__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    width: 100%;
+  }
+
+  .s__container__info {
+    flex-direction: column;
+  }
+  .s__container {
+    width: 100%;
+  }
+  .s__text {
+    width: 100%;
+  }
+  .s__slaider {
+    width: 100%;
+  }
+  .wave2,
+  .wave {
+    font-weight: 800;
+  }
+  .s__text p {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .s__slaider img {
+    width: 190px;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+  .contact__info,
+  .contact__form {
+    flex-basis: 100%;
+    margin: 0px 30px;
+  }
+
+  .contact__info ul {
+    margin-top: 20px;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    margin: 10px 0px;
+  }
+
+  .back-to-top {
+    right: 50px;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo img {
+    width: 180px;
+  }
+  #service__about {
+    width: 100%;
+  }
+
+  .s__text {
+    width: 90%;
+  }
+  .s__slaider {
+    width: 90%;
+  }
+  .s__slaider img {
+    width: 250px;
+  }
+  .box h3,
+  .box p {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wave2,
+  .wave {
+    font-size: 38px;
+  }
+
+  .s__text p {
+    font-size: 28px;
+  }
+
+  .back-to-top {
+    width: 60px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #service__about {
+    width: 80%;
+  }
+
+  .s__text {
+    width: 90%;
+  }
+  .s__slaider {
+    width: 80%;
+  }
+  .copyright p {
+    font-size: 18px;
+  }
+  .footer__column {
+    width: 100%;
+  }
+  ul li i {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar__header {
+    width: 480px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .menu__btn__icon {
+    width: 40px;
+  }
+
+  #service__about {
+    margin-left: 5%;
+    width: 70%;
+  }
+
+  .wave2,
+  .wave {
+    font-size: 24px;
+  }
+
+  .s__text p {
+    font-size: 18px;
+  }
+  .box p {
+    font-size: medium;
+  }
+
+  .contact__info h3,
+  .contact__form h3,
+  .contact__info p {
+    font-size: 24px;
+  }
+  .box h3 {
+    font-size: 20px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__column h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #service__about {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .menu__btn__icon {
+    left: 50px;
+  }
+  .s__slaider {
+    width: 80%;
+  }
+  .s__slaider img {
+    width: 230px;
+  }
+  .box {
+    width: 90%;
+  }
+  .contact__info p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  ul li a {
+    font-size: 18px;
+  }
+  .back-to-top {
+    bottom: 90px;
+  }
+}
